@@ -1,0 +1,112 @@
+.education-section {
+  padding: 100px 8%;
+  background-color: #0c001c; /* Same as Contact background */
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+}
+
+.education-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.edu-subtitle {
+  color: #39FF14;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.edu-title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 3rem;
+  color: #f1f1e6;
+}
+
+.edu-title span {
+  color: #6c47ff; /* Brand Purple */
+}
+
+/* Timeline/Card Container */
+.education-container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.education-card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  transition: 0.4s ease;
+}
+
+.education-card:hover {
+  background: rgba(108, 71, 255, 0.05);
+  border-color: #6c47ff;
+  transform: translateX(10px);
+}
+
+.premium-card {
+  border-left: 4px solid #6c47ff; /* Highlight for University */
+}
+
+.card-dot {
+  position: absolute;
+  left: -12px;
+  top: 45px;
+  width: 20px;
+  height: 20px;
+  background: #6c47ff;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(108, 71, 255, 0.5);
+}
+
+.edu-year {
+  color: #39FF14;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.edu-degree {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.edu-institute {
+  font-size: 1.1rem;
+  color: #999;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.edu-details {
+  line-height: 1.7;
+  color: #bdc3c7;
+  margin-bottom: 25px;
+}
+
+.edu-tags {
+  display: flex;
+  gap: 15px;
+}
+
+.edu-tags span {
+  background: rgba(108, 71, 255, 0.1);
+  color: #d1bdfa;
+  padding: 6px 15px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid rgba(108, 71, 255, 0.2);
+}
