@@ -1,0 +1,86 @@
+.hero-main {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Picture ke upar darkness taake text nazar aaye */
+.hero-main::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* 60% darkness */
+  z-index: 1;
+}
+
+.hero-overlay {
+  text-align: center;
+  max-width: 1000px;
+  z-index: 2;
+  position: relative;
+}
+
+.green-text {
+  color: #39FF14;
+  letter-spacing: 4px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.big-title {
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-weight: 900;
+  line-height: 0.85;
+  margin: 15px 0;
+  color: #ffffff;
+}
+
+.description {
+  max-width: 550px;
+  margin: 0 auto;
+  color: #bdc3c7;
+  font-size: 1.1rem;
+}
+
+.contact-btn {
+  background-color: #39FF14;
+  color: #000000;
+  padding: 16px 45px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 800;
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+.stats-bar {
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 25px;
+  z-index: 2;
+}
+
+.stat-item span {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ffffff;
+  display: block;
+}
+
+.stat-item p {
+  color: #888;
+  font-size: 0.75rem;
+}
